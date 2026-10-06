@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Jurnal Rasa & Artikel - Sambal Pecel Jawara Nganjuk</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <style>
+    @layer base{
+      html,body{margin:0;padding:0;}
+      body{background-color:#fbfbe2;}
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config={
+      darkMode:"class",
+      theme:{
+        extend:{
+          colors:{
+            "error-container":"#ffdad6",
+            "surface-container":"#efefd7",
+            "background":"#fbfbe2",
+            "on-surface":"#1b1d0e",
+            "surface-variant":"#e4e4cc",
+            "surface-container-low":"#f5f5dc",
+            "surface-container-high":"#eaead1",
+            "secondary-container":"#fed3c7",
+            "secondary":"#77574d",
+            "on-secondary-container":"#795950",
+            "primary":"#570000",
+            "primary-container":"#800000",
+            "tertiary":"#481700",
+            "tertiary-container":"#692906",
+            "tertiary-fixed":"#ffdbcd",
+            "tertiary-fixed-dim":"#ffb596",
+            "surface":"#fbfbe2",
+            "on-primary":"#ffffff",
+            "on-surface-variant":"#5a413d"
+          },
+          spacing:{
+            "gutter":"24px",
+            "container-max":"1200px",
+            "margin-mobile":"20px",
+            "margin-desktop":"64px",
+            "section-gap":"80px"
+          },
+          fontFamily:{
+            "body":["Plus Jakarta Sans", "sans-serif"],
+            "display":["DM Serif Display", "serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background font-body text-on-surface">
+
+  <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.03)] border-b border-outline-variant/20">
+  <div class="h-20 max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img alt="Sambal Pecel Jawara Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTXaejdhVdC66PcFGqU0sATxDiMfE0PmxvdewiQC6IKXNKEZrBRpeSsblER3OQP8e2rsMvsrYg0pgv9nfJjY3wqaaGBWFrQ-GcX1ys3vbnttigY05WKKf5sSlAkc7rREoBkSGiDieA2v7NcWJWZmGNJNchW_feXYIkAN_DKt1fJY5LOwYOUXuoC8WHdMyoObDqGB3878jhUGYFmwGvlVuqN4IHcjrzuV89A0kBjUhc35H6MtKlK-1RrQ"/>
+      <div class="flex flex-col">
+        <span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">Jawara</span>
+        <span class="text-[10px] font-label-sm uppercase tracking-widest text-secondary font-bold">Sambal Pecel Nganjuk</span>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 ml-8">
+      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" data-path="beranda" href="index.html">Beranda</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" data-path="tentang-kami" href="tentang-kami.html">Tentang Kami</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" data-path="produk" href="produk.html">Produk</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" data-path="promo" href="promo.html">Promo</a>
+<a aria-current="page" class="transition-colors duration-300 text-primary font-semibold" data-path="artikel" href="artikel.html">Artikel</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" data-path="kontak" href="kontak.html">Kontak</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a class="hidden sm:inline-flex items-center gap-2 bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-sm text-label-sm hover:bg-primary-container transition-all duration-300 shadow-sm" href="https://wa.me/6287759740283?text=Halo%20Sambal%20Pecel%20Jawara%2C%20saya%20ingin%20memesan%20sambal%20pecel." target="_blank">
+        <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+        <span>Pesan Sekarang</span>
+      </a>
+      <button id="mobile-nav-toggle" aria-label="Menu" class="lg:hidden p-2 rounded-lg text-primary hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Navigation Dropdown -->
+  <div id="mobile-nav-menu" class="hidden lg:hidden bg-surface border-b border-outline-variant/30 px-6 py-4 space-y-2 shadow-lg">
+    <a class="block py-2 text-on-surface-variant hover:text-primary pl-3" href="index.html">Beranda</a>
+<a class="block py-2 text-on-surface-variant hover:text-primary pl-3" href="tentang-kami.html">Tentang Kami</a>
+<a class="block py-2 text-on-surface-variant hover:text-primary pl-3" href="produk.html">Produk</a>
+<a class="block py-2 text-on-surface-variant hover:text-primary pl-3" href="promo.html">Promo</a>
+<a class="block py-2 text-primary font-semibold border-l-2 border-primary pl-3" href="artikel.html">Artikel</a>
+<a class="block py-2 text-on-surface-variant hover:text-primary pl-3" href="kontak.html">Kontak</a>
+    <div class="pt-3 border-t border-outline-variant/20">
+      <a class="flex items-center justify-center gap-2 w-full bg-primary text-on-primary py-3 rounded-full font-label-sm text-label-sm text-center" href="https://wa.me/6287759740283?text=Halo%20Sambal%20Pecel%20Jawara%2C%20saya%20ingin%20memesan%20sambal%20pecel." target="_blank">
+        <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+        <span>Pesan via WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="w-full pt-20 bg-background overflow-x-hidden pb-section-gap">
+    <!-- Decorative background elements -->
+    <div class="absolute top-0 right-0 w-2/3 h-[700px] bg-gradient-to-bl from-tertiary-fixed/30 via-secondary-container/10 to-transparent blur-3xl -z-10 rounded-full opacity-50 pointer-events-none"></div>
+    <div class="absolute bottom-1/4 left-0 w-1/2 h-[600px] bg-gradient-to-tr from-primary/5 to-transparent blur-3xl -z-10 rounded-full opacity-60 pointer-events-none"></div>
+
+    <!-- Header Section -->
+    <section class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop pt-16 pb-12 w-full">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-outline-variant/30 pb-8">
+        <div>
+          <span class="font-bold text-xs uppercase tracking-[0.25em] text-secondary mb-3 block">[ Jurnal Kuliner Jawara ]</span>
+          <h1 class="font-display text-4xl lg:text-6xl text-primary font-normal">Cerita, Edukasi & Inspirasi</h1>
+        </div>
+        <div class="max-w-md md:text-right">
+          <p class="text-on-surface-variant text-base leading-relaxed">Jelajahi panduan menyimpan sambal, tips mengatur kekentalan bumbu, rahasia bahan pilihan, hingga inspirasi sajian khas Nusantara.</p>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills & Search -->
+      <div class="mt-8 flex flex-col md:flex-row gap-4 items-center justify-between">
+        <div class="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 scrollbar-none" id="category-filters">
+          <button onclick="filterCategory('all')" class="category-btn active px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-primary text-white shadow-sm" data-category="all">
+            Semua (19)
+          </button>
+
+          <button onclick="filterCategory('Bahan Baku')" class="category-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-category="Bahan Baku">
+            Bahan Baku (2)
+          </button>
+    
+          <button onclick="filterCategory('Gaya Hidup')" class="category-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-category="Gaya Hidup">
+            Gaya Hidup (2)
+          </button>
+    
+          <button onclick="filterCategory('Hemat & Belanja')" class="category-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-category="Hemat & Belanja">
+            Hemat & Belanja (1)
+          </button>
+    
+          <button onclick="filterCategory('Inspirasi Kuliner')" class="category-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-category="Inspirasi Kuliner">
+            Inspirasi Kuliner (4)
+          </button>
+    
+          <button onclick="filterCategory('Kesehatan & Nutrisi')" class="category-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-category="Kesehatan & Nutrisi">
+            Kesehatan & Nutrisi (1)
+          </button>
+    
+          <button onclick="filterCategory('Kualitas & Rasa')" class="category-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-category="Kualitas & Rasa">
+            Kualitas & Rasa (1)
+          </button>
+    
+          <button onclick="filterCategory('Panduan Penyajian')" class="category-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-category="Panduan Penyajian">
+            Panduan Penyajian (1)
+          </button>
+    
+          <button onclick="filterCategory('Panduan Penyimpanan')" class="category-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-category="Panduan Penyimpanan">
+            Panduan Penyimpanan (4)
+          </button>
+    
+          <button onclick="filterCategory('Standar Mutu')" class="category-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-category="Standar Mutu">
+            Standar Mutu (1)
+          </button>
+    
+          <button onclick="filterCategory('Tips & Trik')" class="category-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-category="Tips & Trik">
+            Tips & Trik (2)
+          </button>
+    
+        </div>
+        <div class="relative w-full md:w-72">
+          <input type="text" id="article-search" placeholder="Cari artikel / tips..." oninput="searchArticles()" class="w-full bg-surface-container-low border border-outline-variant/40 rounded-full px-5 py-2.5 text-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary/20">
+          <span class="material-symbols-outlined absolute right-4 top-2.5 text-on-surface-variant/60 text-lg">search</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Article Card -->
+    <section class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop mb-16 w-full" id="featured-article-section">
+      <a href="detail-artikel.html?id=1" class="group block relative rounded-3xl overflow-hidden bg-surface-container shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
+        <div class="grid grid-cols-1 lg:grid-cols-12 min-h-[460px]">
+          <div class="lg:col-span-7 relative h-72 lg:h-auto overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYba-CeRO21Hl59tSB5bM_rYtEN9qmidJp0QpfomQHho2r_oxmWKCc2kluHobhkAnsrfCth982wBhilWwlDXtqpnXJrnuEwGMNq_l7wuvz9sWH23DqJh0kjM0UkzVHDP2R7dca38jH6LL-T3ghPq-kJxW3EameSdWhpY6OTOjG4mpVicADxehXcqY7L9Hhm-mESnAaLTcJ4d2uIP9PfPfuqvUBGx7dQRNdeUc86C3-ZYgS4d1DjTRy7w" alt="Di Balik Kemasan Praktis Pecel Jawara: Proses Higienis Berstandar Pangan"/>
+            <div class="absolute top-4 left-4">
+              <span class="bg-primary text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-md">Artikel Pilihan</span>
+            </div>
+          </div>
+          <div class="lg:col-span-5 p-8 lg:p-12 flex flex-col justify-center bg-surface-container lg:-ml-6 lg:rounded-l-3xl z-10">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Standar Mutu</span>
+              <span class="text-xs text-on-surface-variant/70">• 2 menit baca</span>
+            </div>
+            <h2 class="font-display text-2xl lg:text-3xl text-primary font-normal leading-snug mb-4 group-hover:text-primary-container transition-colors">
+              Di Balik Kemasan Praktis Pecel Jawara: Proses Higienis Berstandar Pangan
+            </h2>
+            <p class="text-on-surface-variant text-sm lg:text-base leading-relaxed mb-6 line-clamp-3">
+              Di Balik Kemasan Praktis Pecel Jawara Ada Proses Higienis
+            </p>
+            <div class="mt-auto flex items-center gap-2 text-primary font-semibold text-sm group-hover:gap-4 transition-all duration-300">
+              <span>Baca Selengkapnya</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop w-full">
+      <div class="flex items-center justify-between mb-8">
+        <h3 class="font-display text-2xl text-on-surface" id="grid-title">Seluruh Koleksi Artikel & Tips</h3>
+        <span class="text-xs text-on-surface-variant" id="articles-count-info">Menampilkan 19 tulisan</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="articles-grid">
+
+        <!-- Article Card 1 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Standar Mutu" data-title="di balik kemasan praktis pecel jawara: proses higienis berstandar pangan" data-summary="di balik kemasan praktis pecel jawara ada proses higienis">
+          <a href="detail-artikel.html?id=1" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYba-CeRO21Hl59tSB5bM_rYtEN9qmidJp0QpfomQHho2r_oxmWKCc2kluHobhkAnsrfCth982wBhilWwlDXtqpnXJrnuEwGMNq_l7wuvz9sWH23DqJh0kjM0UkzVHDP2R7dca38jH6LL-T3ghPq-kJxW3EameSdWhpY6OTOjG4mpVicADxehXcqY7L9Hhm-mESnAaLTcJ4d2uIP9PfPfuqvUBGx7dQRNdeUc86C3-ZYgS4d1DjTRy7w" alt="Di Balik Kemasan Praktis Pecel Jawara: Proses Higienis Berstandar Pangan" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Standar Mutu
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=1">Di Balik Kemasan Praktis Pecel Jawara: Proses Higienis Berstandar Pangan</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Di Balik Kemasan Praktis Pecel Jawara Ada Proses Higienis
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=1" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 2 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Tips & Trik" data-title="hemat waktu di dapur: rahasia ibu cerdas masak praktis dengan pecel jawara" data-summary="hemat waktu di dapur: cara pecel jawara membantu ibu rumah tangga yang super">
+          <a href="detail-artikel.html?id=2" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_S1rOQtjKtaNuB3ooWDZKsaAghFtVYYx7NZW8ksRFNUYv8qDCNtA_TGsc3R0VwNp2hRm9qeBrX3Zgw-Lw1Y4lDm19iwsjEvxthcDp_7e2P0sPKt1Eli0rWHPtRaVgJxaGcN_vBfxvGSEEfrn2-ZUycfUFrv5Vez1CLZUiaTk_Hmagr1E2whBfmmrzxb0wtGJEmrTtTG6qfdyEfmrgmRTwxdRKBYdAaDPD7ju6a7GhcbmssBga8oPf3Q" alt="Hemat Waktu di Dapur: Rahasia Ibu Cerdas Masak Praktis dengan Pecel Jawara" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Tips & Trik
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                3 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=2">Hemat Waktu di Dapur: Rahasia Ibu Cerdas Masak Praktis dengan Pecel Jawara</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Hemat Waktu di Dapur: Cara Pecel Jawara Membantu Ibu Rumah Tangga yang Super
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=2" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 3 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Inspirasi Kuliner" data-title="kreasi saus cocolan gorengan khas pecel jawara untuk acara kumpul keluarga" data-summary="ide kreatif memanfaatkan pecel jawara sebagai saus cocolan gorengan untuk acara">
+          <a href="detail-artikel.html?id=3" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqGLGaW5w9bCHvoVgaNE7wneoRHmMzu0mOIyDEMjsN80jHeI-cZhjByfkjP-HtM3Xo-7ScIP69gTZ6L9fVdL_dyI_pEDAsMoPStbnEfr3uzAUEdUcT1LkC9_jH1F9zwsRa4yLhErlTlvmBl6U0w0Q7nHsSFjmaVkpa3rL01f5uoVkTBdxvpk-V1mriCiVPt6o6zyO031TSZv_dq0AYXVYfpcCUTITGROOxjbNjz1PR6oj6_i4oFTYH2g" alt="Kreasi Saus Cocolan Gorengan Khas Pecel Jawara untuk Acara Kumpul Keluarga" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Inspirasi Kuliner
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=3">Kreasi Saus Cocolan Gorengan Khas Pecel Jawara untuk Acara Kumpul Keluarga</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Ide Kreatif Memanfaatkan Pecel Jawara Sebagai Saus Cocolan Gorengan untuk Acara
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=3" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 4 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Kualitas & Rasa" data-title="mengapa rasa pedas & gurih sambal pecel jawara selalu konsisten tiap batch" data-summary="mengapa rasa pedas dan gurih pecel jawara tetap">
+          <a href="detail-artikel.html?id=4" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU7vvoN2g3sU8S_wXnT6FnuLENDYO5h9EUNxPJr6QoWgIxoAwLHiYWrrM4llw2Ods5etGxRB6SJcvL-rzBgStxua50q8WRKNtcr2Q307LQiZoPNcYezQ--tV8uOH7QV-lBoBRETxQoq0AT7pJOR4H9ZrvCOM3-t6yjt3U-_4bVEq-Idg8legT82VE3m0ZtbYUhwsOJZgSzFDpT5APtVMVt-gAyh69gg25Du443zOTD6qR6N9CueLgivg" alt="Mengapa Rasa Pedas & Gurih Sambal Pecel Jawara Selalu Konsisten Tiap Batch" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Kualitas & Rasa
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=4">Mengapa Rasa Pedas & Gurih Sambal Pecel Jawara Selalu Konsisten Tiap Batch</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Mengapa Rasa Pedas dan Gurih Pecel Jawara Tetap
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=4" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 5 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Panduan Penyajian" data-title="mengulik sisi praktis sambal pecel jawara: tinggal seduh air hangat langsung sedap" data-summary="mengulik sisi praktis sambal pecel jawara: tinggal">
+          <a href="detail-artikel.html?id=5" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQw8jd_HW5RKTKK4ECwH4oP3BnxBQ04Rj2rFy8K9stwipRP7GkQOLNU6wwR-NLYInOFoZh_HOlRAQHVwen6_AnHFIGQXXLrkiUjaPIVCZ_AqGvIAQQM5bRC1xs8s0hY6jHhpzjEQ9nI5B1TOzfqg3sv0V1HXj0oqTcd6VB7dNJRCCEU6JV6gwGZVctLVz0tUi4nmYxhXTOFl7WF_nrlLFxJu9gvkCAizZeP09jNg7RknFwT_BmpSyP0A" alt="Mengulik Sisi Praktis Sambal Pecel Jawara: Tinggal Seduh Air Hangat Langsung Sedap" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Panduan Penyajian
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=5">Mengulik Sisi Praktis Sambal Pecel Jawara: Tinggal Seduh Air Hangat Langsung Sedap</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Mengulik Sisi Praktis Sambal Pecel Jawara: Tinggal
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=5" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 6 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Inspirasi Kuliner" data-title="menu sahur kilat: bebas ribet masak subuh bersama sambal pecel jawara" data-summary="menu sahur kilat: bebas ribet masak subuh-subuh bersama sambal pecel jawara">
+          <a href="detail-artikel.html?id=6" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRDVLDmVYoZi85HFQOr9LzfedeovunKZWoK6FL_GaX2F174GNoCclsvE0Dj7zoppaFoZN0DxEDo3dda-72ytggNPdLvwGbspUgkGNqLjKu8iSLGMPSmVvTvuaW-xMH1BCMQN5OBEHd5Y5sU4PVfjJpek82rGc0adm6e76rTdQducH4RLQC_MzWhOiecMCX5CUhdMNCqonwq3Sj4FXk598aU1xyvoZePCf0lXgzc4XGT8AGokAkupZCSg" alt="Menu Sahur Kilat: Bebas Ribet Masak Subuh Bersama Sambal Pecel Jawara" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Inspirasi Kuliner
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=6">Menu Sahur Kilat: Bebas Ribet Masak Subuh Bersama Sambal Pecel Jawara</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Menu Sahur Kilat: Bebas Ribet Masak Subuh-Subuh Bersama Sambal Pecel Jawara
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=6" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 7 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Hemat & Belanja" data-title="mengapa sambal pecel siap saji lebih ekonomis dibanding membuat sendiri dari nol" data-summary="mengapa sambal pecel siap saji lebih ekonomis dibanding membuat sendiri dari">
+          <a href="detail-artikel.html?id=7" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKIsobZZ8nGMllcqbCFeZZ-_wRjr8qMRIBQ6g9PEu2O-bn-6-bt-C49KU6FxNoVD4fXBQEyjS7_iZBZQwYiX9rqEdpbnZGR3jd6yq-zIqcyl1X2JNLcKlEpSYeSGFjTX7ihAywRg1Q2GK7tUMJPqROS2NNW1G8Exk577ZXM0yR8ZovnA0f_Xrw8J1YblckHW8f1E7OHdC2Fzc-Y09HiPmme0qmWoLZO2zJR6kQZjp-sDHIp6fwajcEaw" alt="Mengapa Sambal Pecel Siap Saji Lebih Ekonomis Dibanding Membuat Sendiri dari Nol" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Hemat & Belanja
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                6 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=7">Mengapa Sambal Pecel Siap Saji Lebih Ekonomis Dibanding Membuat Sendiri dari Nol</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Mengapa Sambal Pecel Siap Saji Lebih Ekonomis Dibanding Membuat Sendiri dari
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=7" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 8 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Bahan Baku" data-title="rahasia aroma daun jeruk segar yang menguar harum saat pecel jawara diseduh" data-summary="1. rahasia aroma daun jeruk segar yang langsung menguar saat pecel jawara diseduh">
+          <a href="detail-artikel.html?id=8" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIYnaGxwK4oj22ccY0H7rG_GXypCyEi8WRGXQIcoNJ76LwTtVW_znPZh4pTAkiLKw7BJiRNoTb_MZxNZkotm9FwOjE2tpz0VBSpz3HONnHXub1z66sCOOSgaNIbcpbSHrNYjdVPXVpyo4kT5c4H3wXSwdNKa8JDjPFO9tYeC1DA-wDHZIHrAa2jNHnjGt_yBa568AjlWnHYiWYgWiAoru9Jyheg4cJdbnsRWcFV7KH841J7u8V8bTVvA" alt="Rahasia Aroma Daun Jeruk Segar yang Menguar Harum Saat Pecel Jawara Diseduh" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Bahan Baku
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                3 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=8">Rahasia Aroma Daun Jeruk Segar yang Menguar Harum Saat Pecel Jawara Diseduh</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              1. Rahasia Aroma Daun Jeruk Segar yang Langsung Menguar Saat Pecel Jawara Diseduh
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=8" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 9 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Panduan Penyimpanan" data-title="setelah kemasan dibuka, berapa lama sambal pecel jawara bisa bertahan segar?" data-summary="setelah kemasan dibuka, berapa lama sambel pecel jawara">
+          <a href="detail-artikel.html?id=9" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnyA0t6wNZPHdVgCfqSdbEihu3ShQKMAJvN2gtI7XBScLOgzfQGiXr1HT0sie2tL2D5Cc9b0jU5EZOT_DiepcsbAC70cp18AmDdWX8BpEuExLDxjpVvv4Q_ZFh90N2JunEyCk54RD1ekSVQTF6IWhSCd0x_saHoOIYPI1xvl1T1jsl8om8HhQnuX3vCEPH9cQI1T9gjYkJINvRPhC6pYARJaenZi1ZVe8LoUTvrZNJpbrnXj-zv4pFRg" alt="Setelah Kemasan Dibuka, Berapa Lama Sambal Pecel Jawara Bisa Bertahan Segar?" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Panduan Penyimpanan
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=9">Setelah Kemasan Dibuka, Berapa Lama Sambal Pecel Jawara Bisa Bertahan Segar?</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Setelah Kemasan Dibuka, Berapa Lama Sambel Pecel Jawara
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=9" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 10 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Gaya Hidup" data-title="stok makanan aman: mengapa sambal pecel jawara wajib selalu tersedia di kulkas" data-summary="stok makanan aman: mengapa sambal pecel jawara">
+          <a href="detail-artikel.html?id=10" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqLIHe9YZGhyhypymJcpFZyUclXXFiCwv3SKUUvKo8drYTIXFAL0gPb1IyveqHfCetWnQWMbgyBr5-r1tz51ME6JtQMeEHmR6ppW3EBrhtc21eDwA80Y9G_99chkRidaI3wzfbaBWBzAbfpkSn7h2hnHmn0Y_XXh5GYdomavld4ZnHcwOG4BfywFUiQ_s49KuMSW6yetNs45qm-As2I_6yR_PE-k9-HmUroCgPYzIdUS0nqPoHMJxKOQ" alt="Stok Makanan Aman: Mengapa Sambal Pecel Jawara Wajib Selalu Tersedia di Kulkas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Gaya Hidup
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=10">Stok Makanan Aman: Mengapa Sambal Pecel Jawara Wajib Selalu Tersedia di Kulkas</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Stok Makanan Aman: Mengapa Sambal Pecel Jawara
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=10" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 11 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Tips & Trik" data-title="tips mengatur tingkat kekentalan sambal pecel jawara sesuai selera masakan" data-summary="tips mengatur kekentalan sambel pecel jawara sesuai">
+          <a href="detail-artikel.html?id=11" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvTQ13z5JlsCB6MIKYsZdWrNlaQm0LZXz6IsicYYlh8sIWdJHbe1ihkpeRT4RX132L-G-QKMU2sawNHH2BflQj1kQQvGSZhqLYAKXLl1Zi51M2obEAdlxe2x-xo-PmLAO-e-mibYLnNQWXwjxWC-B5ZnzxB6aBRWSnFyznBEsBAyDIgCEi4LchpfqH-8bY8qjHvOVHrXiihkPTikSW8BypJQzfHxn9RO7J3J_orb68IKiT6-ls1WqASA" alt="Tips Mengatur Tingkat Kekentalan Sambal Pecel Jawara Sesuai Selera Masakan" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Tips & Trik
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=11">Tips Mengatur Tingkat Kekentalan Sambal Pecel Jawara Sesuai Selera Masakan</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Tips Mengatur Kekentalan Sambel Pecel Jawara Sesuai
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=11" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 12 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Panduan Penyimpanan" data-title="trik mencegah sambal pecel mengeras di kulkas tanpa merusak kualitas rasa" data-summary="cara mencegah sambal pecel menjadi keras di kulkas">
+          <a href="detail-artikel.html?id=12" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqotrNuYInt3Br6IIkguOFnu7qRw21kqTMOMNzompAHJ3lik_9gZ2lLxT7it5rYlXmL2ndGJpmdLO6ci5BE7Lc0fx9HKVUULBtCywGUfIETZdnLOABm-rv1z9kbe0sZ7Ce7k-QVBoGLnuRgpnNL7_XjBJyf1owlid0nxA1d0AJHgaXbkXB4nWjtRuPjJBPOgZr9kVsLosmcse1rusBpbxBxnMwGyxn6nlowxQjGbBTd_0U96yE6QTCKg" alt="Trik Mencegah Sambal Pecel Mengeras di Kulkas Tanpa Merusak Kualitas Rasa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Panduan Penyimpanan
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=12">Trik Mencegah Sambal Pecel Mengeras di Kulkas Tanpa Merusak Kualitas Rasa</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Cara Mencegah Sambal Pecel Menjadi Keras di Kulkas
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=12" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 13 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Kesehatan & Nutrisi" data-title="menepis mitos: sambal pecel siap saji jawara tetap kaya nutrisi & protein nabati" data-summary="2. menepis mitos: sambal siap saji pecel jawara tetap kaya nutrisi">
+          <a href="detail-artikel.html?id=13" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDysGq9k1Rdny8eNk9_Q1ETvILRC3HEtKMT4SqhaPQxxCpqh2cvEfVMQrX4BmBGQtN5ihyiFde6k2ov5IigFEwssHgIc2fahp2N7at4VYj4P7WWTZzLZ62vp3KaK633hz1CvM5Iz4FQVYd4FjmDGYQDmHmWlfKG1Kcml1pT2FMnXLa3ugghcE5I4xWXIMS9_-s_8oav4gpU0Moa24IYUh3S3sc6KeU0GgIr5j3FBzAiiIEAb1swLTxsfg" alt="Menepis Mitos: Sambal Pecel Siap Saji Jawara Tetap Kaya Nutrisi & Protein Nabati" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Kesehatan & Nutrisi
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=13">Menepis Mitos: Sambal Pecel Siap Saji Jawara Tetap Kaya Nutrisi & Protein Nabati</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              2. Menepis Mitos: Sambal Siap Saji Pecel Jawara Tetap Kaya Nutrisi
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=13" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 14 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Bahan Baku" data-title="mengenal karakteristik kacang tanah pilihan yang menjadikan sambal jawara tahan lama" data-summary="1. mengenal karakteristik kacang pilihan yang membuat pecel">
+          <a href="detail-artikel.html?id=14" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG-51eme01txEFqSQzG10CkRVvqDM42KU4Y4emMwd7PC3vhFcZXIRMJIwjEP3UzWA7LjJplb9WmhNL69o4HlR15zDRGeizy9HqiusAwvsEQdnnV-439adUxZLCV3-e0cixpmYWVfMxj1tAmag1pZ9Po8U4dAlYiomxAFgguIusHtUCy5BLKTVfGDpYYS0lGrKqXWbGbPUFXdAHj1rCqDaaJ7QwISjmdq2kIoX5AyhWlHYx-mU2quu1BA" alt="Mengenal Karakteristik Kacang Tanah Pilihan yang Menjadikan Sambal Jawara Tahan Lama" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Bahan Baku
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=14">Mengenal Karakteristik Kacang Tanah Pilihan yang Menjadikan Sambal Jawara Tahan Lama</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              1. Mengenal Karakteristik Kacang Pilihan yang Membuat Pecel
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=14" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 15 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Inspirasi Kuliner" data-title="solusi menu kilat: makan enak tanpa repot ulek lewat sambal pecel jawara" data-summary="produk: sambal pecel jawara siap saji">
+          <a href="detail-artikel.html?id=15" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb-GzH0N8Bo5xqTtI6m2uko2K73CoGi4Z3N5K2o7fQ8_GGOLKQhX077giC3Hi8r5HAS5THmCNcPjS6yCAdA9kVGYvi08YIPVNM-2gru7g7NmuCSSN1ID0DrYE3HgQ5fELnD-wI-IdnrIHMlP0ZFN_-4Xy2f9dMPLaI31du-XK9tRaq_qV2qQSK_hgF9GJn3Io8LfjGgsxtU8Es7vhkQjuFzmF5H4y3Qmrx8qa2ZjnlmAdkbJFogkGteQ" alt="Solusi Menu Kilat: Makan Enak Tanpa Repot Ulek Lewat Sambal Pecel Jawara" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Inspirasi Kuliner
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                3 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=15">Solusi Menu Kilat: Makan Enak Tanpa Repot Ulek Lewat Sambal Pecel Jawara</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Produk: Sambal Pecel Jawara Siap Saji
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=15" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 16 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Gaya Hidup" data-title="menjadikan sambal pecel jawara sebagai bingkisan & oleh-oleh istimewa khas nganjuk" data-summary="menjadikan sambal pecel jawara sebagai bingkisan atau oleh-oleh praktis yang pasti disukai">
+          <a href="detail-artikel.html?id=16" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkucG3uve_Dt8RxsW8LdQCkFBfjjvsNMxnu6sW-Py9k9rKPtUhiVK0UFxIMHX0BLP6COFVRzj_vVrLtvOz_CUlU1YHPZa0DxWgh7fzwxWbHM7g9fRfmaoFsliaBXn89QwjyUkyR69RscX_4Ii3FfyH34y0kXF4Hquc-2by16CM4x4rbTAXLIZ6AZAZzpq0TGrrAwjJfYqefu8p-bLjUClYHZqGqjgvqqYIFH0uHsdskeIwgjmZMa_dQg" alt="Menjadikan Sambal Pecel Jawara Sebagai Bingkisan & Oleh-Oleh Istimewa Khas Nganjuk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Gaya Hidup
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=16">Menjadikan Sambal Pecel Jawara Sebagai Bingkisan & Oleh-Oleh Istimewa Khas Nganjuk</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Menjadikan Sambal Pecel Jawara sebagai Bingkisan atau Oleh-Oleh Praktis yang Pasti Disukai
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=16" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 17 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Inspirasi Kuliner" data-title="tak cuma sayur rebus: ini deretan hidangan lezat yang cocok diguyur sambal pecel" data-summary="tak hanya untuk sayur: ini deretan makanan yang makin nikmat disiram sambal pecel jawara">
+          <a href="detail-artikel.html?id=17" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYba-CeRO21Hl59tSB5bM_rYtEN9qmidJp0QpfomQHho2r_oxmWKCc2kluHobhkAnsrfCth982wBhilWwlDXtqpnXJrnuEwGMNq_l7wuvz9sWH23DqJh0kjM0UkzVHDP2R7dca38jH6LL-T3ghPq-kJxW3EameSdWhpY6OTOjG4mpVicADxehXcqY7L9Hhm-mESnAaLTcJ4d2uIP9PfPfuqvUBGx7dQRNdeUc86C3-ZYgS4d1DjTRy7w" alt="Tak Cuma Sayur Rebus: Ini Deretan Hidangan Lezat yang Cocok Diguyur Sambal Pecel" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Inspirasi Kuliner
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=17">Tak Cuma Sayur Rebus: Ini Deretan Hidangan Lezat yang Cocok Diguyur Sambal Pecel</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Tak Hanya untuk Sayur: Ini Deretan Makanan yang Makin Nikmat Disiram Sambal Pecel Jawara
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=17" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 18 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Panduan Penyimpanan" data-title="cara menyimpan sambal pecel jawara agar aroma tetap harum berbulan-bulan" data-summary="1. cara menyimpan sambal pecel jawara agar rasa dan aromanya tetap fresh selama">
+          <a href="detail-artikel.html?id=18" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnyA0t6wNZPHdVgCfqSdbEihu3ShQKMAJvN2gtI7XBScLOgzfQGiXr1HT0sie2tL2D5Cc9b0jU5EZOT_DiepcsbAC70cp18AmDdWX8BpEuExLDxjpVvv4Q_ZFh90N2JunEyCk54RD1ekSVQTF6IWhSCd0x_saHoOIYPI1xvl1T1jsl8om8HhQnuX3vCEPH9cQI1T9gjYkJINvRPhC6pYARJaenZi1ZVe8LoUTvrZNJpbrnXj-zv4pFRg" alt="Cara Menyimpan Sambal Pecel Jawara Agar Aroma Tetap Harum Berbulan-Bulan" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Panduan Penyimpanan
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=18">Cara Menyimpan Sambal Pecel Jawara Agar Aroma Tetap Harum Berbulan-Bulan</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              1. Cara Menyimpan Sambal Pecel Jawara agar Rasa dan Aromanya Tetap Fresh Selama
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=18" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Article Card 19 -->
+        <article class="article-item group flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-outline-variant/20" data-category="Panduan Penyimpanan" data-title="ketahui ciri & tanda sambal pecel masih segar dan sangat layak dikonsumsi" data-summary="tanda-tanda sambal pecel kemasan masih layak dikonsumsi">
+          <a href="detail-artikel.html?id=19" class="block relative w-full aspect-[16/10] overflow-hidden bg-surface-variant">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvTQ13z5JlsCB6MIKYsZdWrNlaQm0LZXz6IsicYYlh8sIWdJHbe1ihkpeRT4RX132L-G-QKMU2sawNHH2BflQj1kQQvGSZhqLYAKXLl1Zi51M2obEAdlxe2x-xo-PmLAO-e-mibYLnNQWXwjxWC-B5ZnzxB6aBRWSnFyznBEsBAyDIgCEi4LchpfqH-8bY8qjHvOVHrXiihkPTikSW8BypJQzfHxn9RO7J3J_orb68IKiT6-ls1WqASA" alt="Ketahui Ciri & Tanda Sambal Pecel Masih Segar dan Sangat Layak Dikonsumsi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3">
+              <span class="bg-surface/90 backdrop-blur-sm text-primary text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                Panduan Penyimpanan
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <span class="bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">timer</span>
+                2 menit baca
+              </span>
+            </div>
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <h4 class="font-display text-xl text-primary font-normal leading-snug mb-3 group-hover:text-primary-container transition-colors line-clamp-2">
+              <a href="detail-artikel.html?id=19">Ketahui Ciri & Tanda Sambal Pecel Masih Segar dan Sangat Layak Dikonsumsi</a>
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+              Tanda-Tanda Sambal Pecel Kemasan Masih Layak Dikonsumsi
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Tim Dapur Jawara</span>
+              <a href="detail-artikel.html?id=19" class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                Baca <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+    
+      </div>
+
+      <!-- Empty state when searching -->
+      <div id="no-articles" class="hidden py-16 text-center">
+        <span class="material-symbols-outlined text-5xl text-on-surface-variant/40 mb-3">search_off</span>
+        <h4 class="font-display text-xl text-on-surface mb-2">Artikel Tidak Ditemukan</h4>
+        <p class="text-sm text-on-surface-variant mb-6">Coba kata kunci pencarian lain atau pilih kategori Semua.</p>
+        <button onclick="filterCategory('all'); document.getElementById('article-search').value='';" class="px-5 py-2 rounded-full bg-primary text-white text-xs font-semibold">Tampilkan Semua Artikel</button>
+      </div>
+    </section>
+
+    <!-- WhatsApp Order Callout Banner -->
+    <section class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop mt-20 w-full">
+      <div class="bg-primary text-on-primary rounded-3xl p-8 lg:p-12 relative overflow-hidden shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="space-y-3 max-w-xl text-center lg:text-left z-10">
+          <span class="bg-white/20 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Racikan Homemade Nganjuk</span>
+          <h3 class="font-display text-3xl lg:text-4xl">Ingin Menikmati Kelezatan Sambal Pecel Jawara Hari Ini?</h3>
+          <p class="text-white/80 text-sm leading-relaxed">Tersedia varian Original, Pedas (Best Seller), dan Extra Pedas. Dibuat fresh batch tanpa bahan pengawet kimia.</p>
+        </div>
+        <div class="z-10">
+          <a href="https://wa.me/6287759740283?text=Halo%20Sambal%20Pecel%20Jawara%2C%20saya%20tertarik%20memesan%20setelah%20membaca%20artikel%20website." target="_blank" class="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-full font-bold text-sm hover:bg-surface-container transition-all shadow-lg">
+            <span class="material-symbols-outlined">chat</span>
+            <span>Pesan Langsung via WhatsApp</span>
+          </a>
+        </div>
+        <!-- Decorative bg circle -->
+        <div class="absolute -right-16 -bottom-16 w-80 h-80 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="w-full bg-surface-container-low border-t border-outline-variant/20">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 items-start text-center md:text-left">
+      <!-- Col 1 -->
+      <div class="space-y-4 flex flex-col items-center md:items-start md:col-span-1">
+        <div class="flex items-center gap-3">
+          <img alt="Sambal Pecel Jawara Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTXaejdhVdC66PcFGqU0sATxDiMfE0PmxvdewiQC6IKXNKEZrBRpeSsblER3OQP8e2rsMvsrYg0pgv9nfJjY3wqaaGBWFrQ-GcX1ys3vbnttigY05WKKf5sSlAkc7rREoBkSGiDieA2v7NcWJWZmGNJNchW_feXYIkAN_DKt1fJY5LOwYOUXuoC8WHdMyoObDqGB3878jhUGYFmwGvlVuqN4IHcjrzuV89A0kBjUhc35H6MtKlK-1RrQ"/>
+          <span class="font-headline-md text-headline-md text-primary">Jawara</span>
+        </div>
+        <p class="font-headline-md text-headline-md text-primary italic">"Satu Racikan, Banyak Sajian"</p>
+        <p class="text-body-md text-sm text-on-surface-variant">Sambal pecel artisanal racikan khas Desa Cerme, Pace, Nganjuk Jawa Timur. Gurih, medok, dan tanpa bahan pengawet sintetis.</p>
+        <div class="inline-block bg-primary/10 text-primary px-3 py-1.5 rounded-md text-xs font-semibold">
+          No. P-IRT / Izin Edar: 2093518011162-31
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="space-y-4">
+        <h4 class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Navigasi Utama</h4>
+        <ul class="space-y-2.5 text-body-md text-on-surface-variant">
+          <li><a class="hover:text-primary transition-colors" href="index.html">Beranda</a></li>
+          <li><a class="hover:text-primary transition-colors" href="tentang-kami.html">Tentang Kami</a></li>
+          <li><a class="hover:text-primary transition-colors" href="produk.html">Koleksi Produk</a></li>
+          <li><a class="hover:text-primary transition-colors" href="promo.html">Penawaran Promo</a></li>
+          <li><a class="hover:text-primary transition-colors" href="artikel.html">Jurnal & Resep</a></li>
+          <li><a class="hover:text-primary transition-colors" href="kontak.html">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="space-y-4">
+        <h4 class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Kontak & Layanan</h4>
+        <ul class="space-y-2.5 text-body-md text-on-surface-variant">
+          <li class="flex items-center justify-center md:justify-start gap-2">
+            <span class="material-symbols-outlined text-primary text-sm">call</span>
+            <a href="https://wa.me/6287759740283" target="_blank" class="hover:text-primary font-semibold">0877-5974-0283</a>
+          </li>
+          <li class="flex items-start justify-center md:justify-start gap-2">
+            <span class="material-symbols-outlined text-primary text-sm mt-1">location_on</span>
+            <span>Desa Cerme, Kec. Pace, Kab. Nganjuk, Jawa Timur</span>
+          </li>
+          <li class="text-xs text-secondary mt-2">
+            Best Seller: <strong>Varian Pedas (Level 3)</strong>
+          </li>
+          <li class="text-xs text-secondary">
+            Mulai Berdiri: <strong>Sejak 2025</strong>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="space-y-4">
+        <h4 class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Pemesanan Langsung</h4>
+        <p class="text-sm text-on-surface-variant">Pesan langsung segar dari dapur sangrai untuk hantaran keluarga, stok dapur, atau hampers.</p>
+        <a href="https://wa.me/6287759740283?text=Halo%20Sambal%20Pecel%20Jawara%2C%20saya%20ingin%20memesan%20sambal%20pecel." target="_blank" class="inline-flex items-center gap-2 bg-primary text-on-primary px-5 py-2.5 rounded-full text-xs font-semibold hover:bg-primary-container transition-colors shadow-sm">
+          <span class="material-symbols-outlined text-sm">chat</span>
+          <span>Chat WhatsApp Sekarang</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
+      <p class="font-label-sm text-label-sm text-on-surface-variant opacity-75">© 2025 - 2026 Sambal Pecel Jawara. Dirajut dari Tradisi Asli Nganjuk.</p>
+      <p class="font-label-sm text-xs text-on-surface-variant opacity-60">P-IRT No: 2093518011162-31 • Halal & Alami</p>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp CTA button -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/6287759740283?text=Halo%20Sambal%20Pecel%20Jawara%2C%20saya%20ingin%20tanya%20produk%20dan%20cara%20pesan." target="_blank" class="bg-[#25D366] hover:bg-[#20ba59] text-white p-4 rounded-full shadow-2xl flex items-center gap-3 group hover:scale-105 transition-transform" title="Hubungi kami via WhatsApp">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.35.491 1.199.534 1.286.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.087-.179.182-.077.357.101.173.45 1.025 1.271 1.756.623.555 1.148.728 1.312.809.164.081.26.069.356-.041.096-.11.41-.477.52-.641.11-.164.22-.136.368-.081.148.055.938.442 1.098.522.16.08.267.12.306.188.039.068.039.395-.105.8z"/></svg>
+      <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 font-label-sm whitespace-nowrap text-sm font-semibold">Pesan via WhatsApp</span>
+    </a>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+  <script src="assets/js/articles-data.js"></script>
+  <script>
+    let currentCategory = 'all';
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      const buttons = document.querySelectorAll('.category-btn');
+      buttons.forEach(btn => {
+        if(btn.dataset.category === cat) {
+          btn.classList.add('bg-primary', 'text-white', 'shadow-sm');
+          btn.classList.remove('bg-surface-container', 'text-on-surface');
+        } else {
+          btn.classList.remove('bg-primary', 'text-white', 'shadow-sm');
+          btn.classList.add('bg-surface-container', 'text-on-surface');
+        }
+      });
+      searchArticles();
+    }
+
+    function searchArticles() {
+      const query = document.getElementById('article-search').value.toLowerCase().trim();
+      const items = document.querySelectorAll('.article-item');
+      let visibleCount = 0;
+
+      items.forEach(item => {
+        const itemCategory = item.dataset.category;
+        const itemTitle = item.dataset.title;
+        const itemSummary = item.dataset.summary;
+
+        const matchCategory = (currentCategory === 'all' || itemCategory === currentCategory);
+        const matchQuery = !query || itemTitle.includes(query) || itemSummary.includes(query);
+
+        if(matchCategory && matchQuery) {
+          item.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+
+      const noResult = document.getElementById('no-articles');
+      const countInfo = document.getElementById('articles-count-info');
+      if(visibleCount === 0) {
+        noResult.classList.remove('hidden');
+      } else {
+        noResult.classList.add('hidden');
+      }
+      countInfo.innerText = `Menampilkan ${visibleCount} tulisan`;
+    }
+  </script>
+</body>
+</html>
