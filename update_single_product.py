@@ -11,13 +11,13 @@ single_product_section = '''<!-- Product Showcase Section: Single Product -->
       <!-- Product Image Column -->
       <div class="lg:col-span-6 relative">
         <div class="relative w-full aspect-[3/4] sm:aspect-square rounded-2xl overflow-hidden shadow-2xl bg-surface-container-high group">
-          <img alt="Sambal Pecel Jawara Kemasan 300 gr" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/Foto produk.jpg" />
+          <img alt="Sambal Pecel Jawara Kemasan 200 Gram" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/Foto produk.jpg" />
           <div class="absolute top-4 left-4 flex flex-col gap-2">
             <span class="bg-primary text-on-primary text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md">
               🔥 Best Seller
             </span>
             <span class="bg-surface/90 backdrop-blur-sm text-secondary text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
-              Berat Bersih 300 gr
+              Berat Bersih 200 Gram
             </span>
           </div>
           <div class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full flex items-center gap-1 shadow-sm">
@@ -33,8 +33,8 @@ single_product_section = '''<!-- Product Showcase Section: Single Product -->
           <span class="inline-block font-label-sm text-xs text-secondary tracking-[0.2em] uppercase font-bold mb-2">[ Produk Utama Jawara ]</span>
           <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-primary font-normal leading-tight">Sambal Pecel Jawara</h2>
           <div class="flex items-baseline gap-3 mt-3">
-            <span class="font-headline-lg text-3xl text-primary font-bold">Rp 35.000</span>
-            <span class="text-xs text-on-surface-variant">/ Kemasan Box Higienis (300 gr)</span>
+            <span class="font-headline-lg text-3xl text-primary font-bold">Rp 15.000</span>
+            <span class="text-xs text-on-surface-variant">/ Kemasan Box Higienis (200 Gram)</span>
           </div>
         </div>
 
@@ -75,7 +75,7 @@ single_product_section = '''<!-- Product Showcase Section: Single Product -->
 
         <!-- CTA Buttons -->
         <div class="pt-2 flex flex-col sm:flex-row gap-4">
-          <a class="inline-flex items-center justify-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-full font-label-sm text-sm hover:bg-primary-container transition-all duration-300 shadow-lg shadow-primary/20 flex-1 text-center" href="https://wa.me/6287759740283?text=Halo%20Sambal%20Pecel%20Jawara%2C%20saya%20ingin%20memesan%20Sambal%20Pecel%20Jawara%20Kemasan%20300gr." target="_blank">
+          <a class="inline-flex items-center justify-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-full font-label-sm text-sm hover:bg-primary-container transition-all duration-300 shadow-lg shadow-primary/20 flex-1 text-center" href="https://wa.me/6287759740283?text=Halo%20Sambal%20Pecel%20Jawara%2C%20saya%20ingin%20memesan%20Sambal%20Pecel%20Jawara%20Kemasan%20200Gram." target="_blank">
             <span class="material-symbols-outlined text-[20px]">shopping_cart</span>
             <span>Pesan Sekarang via WhatsApp</span>
           </a>
@@ -116,13 +116,13 @@ index_product_section = '''<!-- Product Showcase Section: Single Signature Produ
         <!-- Product Image -->
         <div class="lg:col-span-6 relative">
           <div class="relative w-full aspect-[3/4] sm:aspect-square rounded-2xl overflow-hidden shadow-2xl bg-surface-container-high group">
-            <img alt="Sambal Pecel Jawara Kemasan 300 gr" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/Foto produk.jpg" />
+            <img alt="Sambal Pecel Jawara Kemasan 200 Gram" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/Foto produk.jpg" />
             <div class="absolute top-4 left-4 flex flex-col gap-2">
               <span class="bg-primary text-on-primary text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md">
                 🔥 Best Seller
               </span>
               <span class="bg-surface/90 backdrop-blur-sm text-secondary text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
-                Netto 300 gr
+                Netto 200 Gram
               </span>
             </div>
             <div class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full flex items-center gap-1 shadow-sm">
@@ -138,8 +138,8 @@ index_product_section = '''<!-- Product Showcase Section: Single Signature Produ
             <span class="inline-block font-label-sm text-xs text-secondary tracking-[0.2em] uppercase font-bold mb-2">[ Signature Jawara ]</span>
             <h3 class="font-display text-3xl sm:text-4xl lg:text-5xl text-primary font-normal leading-tight">Sambal Pecel Jawara</h3>
             <div class="flex items-baseline gap-3 mt-3">
-              <span class="font-headline-lg text-3xl text-primary font-bold">Rp 35.000</span>
-              <span class="text-xs text-on-surface-variant">/ Kemasan Box Higienis (300 gr)</span>
+              <span class="font-headline-lg text-3xl text-primary font-bold">Rp 15.000</span>
+              <span class="text-xs text-on-surface-variant">/ Kemasan Box Higienis (200 Gram)</span>
             </div>
           </div>
 
@@ -159,7 +159,7 @@ index_product_section = '''<!-- Product Showcase Section: Single Signature Produ
           </div>
 
           <div class="pt-2 flex flex-col sm:flex-row gap-4">
-            <a class="inline-flex items-center justify-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-full font-label-sm text-sm hover:bg-primary-container transition-all duration-300 shadow-lg shadow-primary/20 flex-1 text-center" href="https://wa.me/6287759740283?text=Halo%20Sambal%20Pecel%20Jawara%2C%20saya%20ingin%20memesan%20Sambal%20Pecel%20Jawara%20Kemasan%20300gr." target="_blank">
+            <a class="inline-flex items-center justify-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-full font-label-sm text-sm hover:bg-primary-container transition-all duration-300 shadow-lg shadow-primary/20 flex-1 text-center" href="https://wa.me/6287759740283?text=Halo%20Sambal%20Pecel%20Jawara%2C%20saya%20ingin%20memesan%20Sambal%20Pecel%20Jawara%20Kemasan%20200Gram." target="_blank">
               <span class="material-symbols-outlined text-[20px]">shopping_cart</span>
               <span>Pesan via WhatsApp</span>
             </a>

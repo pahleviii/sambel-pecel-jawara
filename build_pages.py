@@ -28,7 +28,6 @@ def generate_header(active_page="beranda"):
         ("beranda", "Beranda", "index.html"),
         ("tentang-kami", "Tentang Kami", "tentang-kami.html"),
         ("produk", "Produk", "produk.html"),
-        ("promo", "Promo", "promo.html"),
         ("artikel", "Artikel", "artikel.html"),
         ("kontak", "Kontak", "kontak.html")
     ]
@@ -105,7 +104,6 @@ def generate_footer():
           <li><a class="hover:text-primary transition-colors" href="index.html">Beranda</a></li>
           <li><a class="hover:text-primary transition-colors" href="tentang-kami.html">Tentang Kami</a></li>
           <li><a class="hover:text-primary transition-colors" href="produk.html">Koleksi Produk</a></li>
-          <li><a class="hover:text-primary transition-colors" href="promo.html">Penawaran Promo</a></li>
           <li><a class="hover:text-primary transition-colors" href="artikel.html">Jurnal & Resep</a></li>
           <li><a class="hover:text-primary transition-colors" href="kontak.html">Hubungi Kami</a></li>
         </ul>
@@ -222,14 +220,7 @@ with open('produk.html', 'w', encoding='utf-8') as f:
     f.write(produk)
 print("Saved produk.html")
 
-# Update Promo
-promo = replace_header_and_footer(promo_raw, "promo")
-promo = promo.replace('+62 812 3456 7890', '0877-5974-0283')
-promo = promo.replace('1234567890', '6287759740283')
-promo = promo.replace('href="#"', 'href="https://wa.me/6287759740283?text=Halo%20Sambal%20Pecel%20Jawara%2C%20saya%20ingin%20klaim%20promo%20JAWARABARU" target="_blank"')
-with open('promo.html', 'w', encoding='utf-8') as f:
-    f.write(promo)
-print("Saved promo.html")
+# Halaman promo dihapus (Okt 2026) - file promo.html tidak lagi digenerate.
 
 # Update Kontak
 kontak = replace_header_and_footer(kontak_raw, "kontak")
